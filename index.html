@@ -29,12 +29,12 @@ Video_0.pause();
 });
 button.addEventListener("click", function(evt){
 console.log("button clicked")
-if(Video_0.muted==true){
+if(Video_0.muted==false){
 button.innerHTML="Mute";
-Video_0.muted=true;
+Video_0.muted=false;
 }else{
 button.innerHTML="Unmute";
-Video_0.muted=false;
+Video_0.muted=true;
 }
 });
 
