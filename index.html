@@ -39,7 +39,7 @@ Video_0.muted=true;
 });
 
         fullbutton.addEventListener("click", function (evt) {
-            if (fullscreen == 0) {
+            if (fullscreen == 1) {
                 if (elem.requestFullscreen) {
                     elem.requestFullscreen();
             } else if (elem.mozRequestFullScreen) {
@@ -53,7 +53,7 @@ Video_0.muted=true;
                 elem.msRequestFullscreen();
             }
             fullbutton.setAttribute("src", "../exit_fullscreen.png");
-            fullscreen = 1;
+            fullscreen = 0;
             } else {
                     if (document.exitFullscreen) {
                         document.exitFullscreen();
