@@ -11,7 +11,7 @@
 <!-- END: Top HTML -->
 <!-- BEGIN: Unity Compiled Events -->
 <script>
-var markerFound = 1;
+var markerFound = 0;
 AFRAME.registerComponent('button', {
 init: function () {
 var elem = document.documentElement;
@@ -72,7 +72,7 @@ Video_0.muted=true;
 tick: function (totalTime, deltaTime) {
 var dTime = deltaTime / 1000;
 
-if (markerFound == 1) {
+if (markerFound == 0) {
 }
 
 
